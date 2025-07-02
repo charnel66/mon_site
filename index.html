@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Les Délices de Charnel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .hero {
+      background-image: url(téléchargement\ \(14\).jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.8;
+      height: 70vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="logo-delices-de-charnel.png" alt="Logo Les Délices de Charnel" height="40">
+        <span class="fw-bold">Les Délices de Charnel</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservation">Réservation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="hero">
+    <div class="hero-content container">
+      <h1 class="display-4 fw-bold">Bienvenue aux Délices de Charnel</h1>
+      <p class="lead mb-4">Une cuisine familiale pleine de goût et de tradition.</p>
+      <a href="#menu" class="btn btn-primary btn-lg">Découvrir notre menu</a>
+    </div>
+  </section>
+
+  <!-- Section Menu -->
+<section id="menu" class="container py-5">
+  <h2 class="text-center mb-5">Notre Menu</h2>
+
+  <!-- Entrées -->
+  <h3 class="mb-4 text-primary">Entrées</h3>
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (2).jpg" class="card-img-top" alt="Entrée 1">
+        <div class="card-body">
+          <h5 class="card-title">Salade fraîcheur</h5>
+          <p class="card-text">Avocat, poulet grillé, œuf, vinaigrette maison.</p>
+        </div>
+        <div class="card-footer"><strong>11 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (5).jpg" class="card-img-top" alt="Entrée 2">
+        <div class="card-body">
+          <h5 class="card-title">Soupe du jour</h5>
+          <p class="card-text">Légumes frais du marché, servie chaude.</p>
+        </div>
+        <div class="card-footer"><strong>7 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (9).jpg" class="card-img-top" alt="Entrée 3">
+        <div class="card-body">
+          <h5 class="card-title">Bruschetta</h5>
+          <p class="card-text">Pain grillé, tomate, ail et huile d’olive.</p>
+        </div>
+        <div class="card-footer"><strong>6 €</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Plats principaux -->
+  <h3 class="mb-4 text-primary">Plats principaux</h3>
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (14).jpg" class="card-img-top" alt="Plat 1">
+        <div class="card-body">
+          <h5 class="card-title">Filet de saumon grillé</h5>
+          <p class="card-text">Avec légumes de saison et sauce citronnée.</p>
+        </div>
+        <div class="card-footer"><strong>18 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (16).jpg" class="card-img-top" alt="Plat 2">
+        <div class="card-body">
+          <h5 class="card-title">Risotto aux champignons</h5>
+          <p class="card-text">Parfumé à la truffe avec parmesan fondant.</p>
+        </div>
+        <div class="card-footer"><strong>15 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (19).jpg" class="card-img-top" alt="Plat 3">
+        <div class="card-body">
+          <h5 class="card-title">Entrecôte grillée</h5>
+          <p class="card-text">Frites maison et sauce au poivre.</p>
+        </div>
+        <div class="card-footer"><strong>20 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (21).jpg" class="card-img-top" alt="Plat 4">
+        <div class="card-body">
+          <h5 class="card-title">Burger gourmet</h5>
+          <p class="card-text">Bœuf, cheddar, bacon, oignons confits, frites.</p>
+        </div>
+        <div class="card-footer"><strong>12 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (22).jpg" class="card-img-top" alt="Plat 5">
+        <div class="card-body">
+          <h5 class="card-title">Pâtes carbonara</h5>
+          <p class="card-text">Crème, lardons, œuf, fromage râpé.</p>
+        </div>
+        <div class="card-footer"><strong>13 €</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desserts -->
+  <h3 class="mb-4 text-primary">Desserts</h3>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (25).jpg" class="card-img-top" alt="Dessert 1">
+        <div class="card-body">
+          <h5 class="card-title">Fondant au chocolat</h5>
+          <p class="card-text">Servi chaud avec glace vanille.</p>
+        </div>
+        <div class="card-footer"><strong>9 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (28).jpg" class="card-img-top" alt="Dessert 2">
+        <div class="card-body">
+          <h5 class="card-title">Tarte Tatin</h5>
+          <p class="card-text">Pomme caramélisée sur pâte croustillante.</p>
+        </div>
+        <div class="card-footer"><strong>8 €</strong></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="téléchargement (29).jpg" class="card-img-top" alt="Dessert 3">
+        <div class="card-body">
+          <h5 class="card-title">Trio de glaces</h5>
+          <p class="card-text">Choix de vanille, fraise, chocolat.</p>
+        </div>
+        <div class="card-footer"><strong>6 €</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">À propos de nous</h2>
+      <p class="text-center mx-auto" style="max-width: 700px;">
+        Aux Délices de Charnel, nous vous proposons des plats faits maison dans une ambiance chaleureuse et conviviale. 
+        Notre passion pour la cuisine se reflète dans chaque assiette.
+      </p>
+    </div>
+  </section>
+
+   
+
+  <!-- Section Contact -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contactez-nous</h2>
+    <form style="max-width: 600px; margin: auto;">
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" placeholder="Votre nom" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Votre email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Section Réservation -->
+  <section id="reservation" class="container py-5">
+    <h2 class="text-center mb-4">Réservez une table</h2>
+    <form style="max-width: 600px; margin: auto;">
+      <div class="mb-3">
+        <label for="nomClient" class="form-label">Nom complet</label>
+        <input type="text" class="form-control" id="nomClient" placeholder="Votre nom" required />
+      </div>
+      <div class="mb-3">
+        <label for="emailClient" class="form-label">Adresse email</label>
+        <input type="email" class="form-control" id="emailClient" placeholder="exemple@mail.com" required />
+      </div>
+      <div class="mb-3">
+        <label for="nombrePersonnes" class="form-label">Nombre de personnes</label>
+        <input type="number" class="form-control" id="nombrePersonnes" min="1" max="20" required />
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Date de réservation</label>
+        <input type="date" class="form-control" id="date" required />
+      </div>
+      <div class="mb-3">
+        <label for="heure" class="form-label">Heure</label>
+        <input type="time" class="form-control" id="heure" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message (optionnel)</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Une demande particulière ?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Réserver maintenant</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 ">
+    <img src="logo-delices-de-charnel.png" alt="Logo Les Délices de Charnel" height="50" class="mb-2"><br>
+      <p class="mb-1"> &copy; 2025 Les Délices de Charnel. Tous droits réservés.</p>
+      <p class="mb-1"> Cotonou, Bénin</p>
+      <div class="d-flex justify-content-center gap-3 fs-5">
+        <a href="https://www.facebook.com" class="text-white" target="_blank"><i class="bi bi-facebook"></i>Facebook</a>
+        <a href="https://www.tiktok.com" class="text-white" target="_blank"><i class="bi bi-tiktok"></i>TikTok</a>
+        <a href="https://wa.me/229XXXXXXXX" class="text-white" target="_blank"><i class="bi bi-whatsapp"></i>Whatsapp</a>
+        <a href="https://www.instagram.com" class="text-white" target="_blank"><i class="bi bi-instagram"></i>Instagram</a>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
